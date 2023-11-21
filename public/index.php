@@ -9,7 +9,7 @@
                 $query = 'SELECT * FROM persona';
                 $result = mysqli_query($conn, $query);
                 echo '<table class="table table-striped">';
-                echo 'ID NOMBRE';
+                echo 'NOMBRE EDAD ESTILO DE MUSICA';
                 while($value = $result->fetch_array(MYSQLI_ASSOC)){
                     echo '<tr>';
                     foreach($value as $element){
