@@ -1,0 +1,7 @@
+FROM mysql
+
+ENV MYSQL_DATABASE adrora
+ENV MYSQL_PASSWORD root
+ENV MYSQL_ROOT_PASSWORD root
+
+COPY ./database/ /docker-entrypoint-initdb.d/

@@ -1,3 +1,3 @@
-FROM php:8-apache
-RUN apt-get update
-RUN docker-php-ext-install mysqli
+FROM nginx
+
+COPY ./public/ /var/web/html/
