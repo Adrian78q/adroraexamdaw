@@ -1,17 +1,13 @@
 <html>
     <head>
-        <title>Evaluable 1 Docker</title>
-        
+        <title>adroraexamdaw</title>
     </head>
     <body>
-        
             <?php
-                echo "<h1>Actividad Evaluable 1 Docker</h1>";
-
-                $conn = mysqli_connect('db', 'root', 'root', "midb");
+                echo "<h1>adroraexamdaw</h1>";
+                $conn = mysqli_connect('database', 'root', 'root', "adrora");
                 $query = 'SELECT * FROM persona';
                 $result = mysqli_query($conn, $query);
-
                 echo '<table class="table table-striped">';
                 echo 'ID NOMBRE';
                 while($value = $result->fetch_array(MYSQLI_ASSOC)){
@@ -22,10 +18,8 @@
                     echo '</tr>';
                 }
                 echo '</table>';
-
                 $result->close();
                 mysqli_close($conn);
             ?>
-        
     </body>
 </html>
